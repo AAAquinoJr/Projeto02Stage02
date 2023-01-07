@@ -1,0 +1,127 @@
+body {
+margin: 0px; /*margin eh o espaçamento de fora da caixa*/
+padding: 0px; /*eh o prenchimento de dentro da caixa*/
+border: 0px solid purple; /*borda da caixa*/
+font-family: 'Open Sans', sans-serif;
+
+background: linear-gradient(180deg, rgba(227, 255, 248, 0) 82.08%, rgba(227, 255, 248, 0.38) 100%);
+
+min-height: 100vh;
+}
+
+
+.page {
+  margin: 0 auto ;
+  width: 1008px;
+  padding-top: 65px;
+  
+}
+
+nav {
+  
+  margin-bottom: 58px;
+  display: flex; /*agrupa as caixas juntas para q fiquem um ao redor da outra*/
+  justify-content: space-between; /*com o display flex vc coloca o modo q as caixas vao ficar espaçadas*/
+  align-items: center; /*alinha os items q estao dentro da caixa*/
+}
+
+ul {
+  display: flex;
+  gap: 48px; /*igual o margin porem quando esta na caixa flex da para usar sem ter q fazer o a + a */
+  list-style: none; /*para tirar as bolinhas da lista*/
+  margin: 0;
+  padding: 0;  
+}
+
+h1, ul {
+font-family: 'Mulish', sans-serif;
+
+}
+
+/*pseudo-class*/ /*quando passar o mouse a opacidade fica inteira*/
+ul li a:hover {
+  font-weight: bold;
+  opacity: 1;
+}
+
+ul li a {
+  opacity: 0.5;
+}
+
+a {
+  color: #1F1534;
+  text-decoration: none;
+}
+
+main {
+  display: flex;
+
+  justify-content: space-between;
+  
+}
+
+h1 {
+  color: #1F1530;
+  font-weight: normal;
+  width: 489px;
+  font-size: 49px;
+  line-height: 56px;
+  
+}
+
+h1 span {
+color: #89C5CC;
+font-weight: bold;
+}
+
+p {
+  width: 438px;
+  font-size: 14px;
+  line-height: 28px;
+  color: #7D7987;
+  margin: 40px 0;
+}
+
+button {
+text-transform: uppercase;
+font-size: 16px;
+font-family: 'Open Sans', sans-serif;
+color: white;
+
+
+background: #69B99D;  
+border: none;
+padding: 14px 32px 15px;
+border-radius: 4px; /*eh um sorthand funciona como o margin so q para as quinas*/
+
+
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 10px;
+
+cursor: pointer;
+
+}
+
+button:hover {
+background: #49806c;  
+
+}
+
+footer{
+  font-size: 14px;
+  line-height: 28px;
+  text-align: center;
+  margin-top: 80px;
+}
+
+footer a{
+  font-weight: bold;
+}
+
+#ball {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+}
